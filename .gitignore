@@ -11,7 +11,13 @@
 # production
 /build
 
+# firebase things
+/functions/
+/dist
+/src/config
+
 # misc
+.firebaserc
 .DS_Store
 .env.local
 .env.development.local
