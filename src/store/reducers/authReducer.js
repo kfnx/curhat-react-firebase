@@ -32,7 +32,6 @@ const authReducer = (state = initState, action) => {
         authError: action.err.message
       };
     default:
-      console.log("no login action yet");
       return state;
   }
 };

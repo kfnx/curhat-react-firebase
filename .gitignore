@@ -14,7 +14,7 @@
 # firebase things
 /functions/
 /dist
-/src/config
+/src/config/fbKey.js
 
 # misc
 .firebaserc
