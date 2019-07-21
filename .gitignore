@@ -12,7 +12,6 @@
 /build
 
 # firebase things
-/functions/
 /dist
 /src/config/fbKey.js
 

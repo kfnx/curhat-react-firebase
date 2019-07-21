@@ -35,11 +35,13 @@ class SignIn extends Component {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" onChange={this.handleChange} />
           </div>
-          <button className="btn blue lighten-1 z-depth-0">Login</button>
           <div className="red-text center">
             {authError ? <p>{authError}</p> : null}
           </div>
-        </form>
+          <button style={{width: "100%"}} className="btn blue lighten-1 z-depth-0">Login</button>
+          <center>atau</center><br />
+          <a href="/signup" style={{width: "100%"}} className="btn green darken-1 z-depth-0">Daftar</a>
+          </form>
       </div>
     );
   }

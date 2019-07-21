@@ -40,10 +40,10 @@ class SignUp extends Component {
             <label htmlFor="pseudonym">Nama Samaran</label>
             <input type="text" id="pseudonym" onChange={this.handleChange} />
           </div>
-          <button className="btn blue lighten-1 z-depth-0">Daftar</button>
           <div className="red-text center">
             {authError ? <p>{authError}</p> : null}
           </div>
+          <button className="btn blue lighten-1 z-depth-0">Daftar</button>
         </form>
       </div>
     );
