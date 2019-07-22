@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { signIn } from "../../store/action/authActions";
 import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class SignIn extends Component {
   state = {
@@ -38,10 +39,22 @@ class SignIn extends Component {
           <div className="red-text center">
             {authError ? <p>{authError}</p> : null}
           </div>
-          <button style={{width: "100%"}} className="btn blue lighten-1 z-depth-0">Login</button>
-          <center>atau</center><br />
-          <a href="/signup" style={{width: "100%"}} className="btn green darken-1 z-depth-0">Daftar</a>
-          </form>
+          <button
+            style={{ width: "100%" }}
+            className="btn blue lighten-1 z-depth-0"
+          >
+            Login
+          </button>
+          <center>atau</center>
+          <br />
+          <Link
+            to="/signup"
+            style={{ width: "100%" }}
+            className="btn green darken-1 z-depth-0"
+          >
+            Daftar
+          </Link>
+        </form>
       </div>
     );
   }

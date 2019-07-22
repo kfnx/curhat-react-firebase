@@ -43,7 +43,12 @@ class SignUp extends Component {
           <div className="red-text center">
             {authError ? <p>{authError}</p> : null}
           </div>
-          <button className="btn blue lighten-1 z-depth-0">Daftar</button>
+          <button
+            style={{ width: "100%" }}
+            className="btn blue lighten-1 z-depth-0"
+          >
+            Daftar
+          </button>
         </form>
       </div>
     );
