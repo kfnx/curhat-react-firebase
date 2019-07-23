@@ -41,7 +41,7 @@ class SignIn extends Component {
           </div>
           <button
             style={{ width: "100%" }}
-            className="btn blue lighten-1 z-depth-0"
+            className="btn blue lighten-1 z-depth-1"
           >
             Login
           </button>
@@ -50,7 +50,7 @@ class SignIn extends Component {
           <Link
             to="/signup"
             style={{ width: "100%" }}
-            className="btn green darken-1 z-depth-0"
+            className="btn green darken-1 z-depth-1"
           >
             Daftar
           </Link>

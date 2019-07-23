@@ -11,7 +11,7 @@ const DetailCurhat = props => {
   if (curhat) {
     return (
       <div className="container section project-detail">
-        <div className="card z-depth-0">
+        <div className="card z-depth-1">
           <div className="card-content">
             <span className="card-title">{curhat.title}</span>
             <p>{curhat.content}</p>

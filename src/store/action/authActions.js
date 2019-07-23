@@ -1,3 +1,5 @@
+import * as Firebase from "firebase";
+
 export const signIn = credentials => {
   return (dispatch, getState, { getFirebase }) => {
     const firebase = getFirebase();
@@ -41,7 +43,8 @@ export const signUp = newUser => {
           .set({
             email: newUser.email,
             pseudonym: newUser.pseudonym,
-            gender: null
+            gender: null,
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
           });
       })
       .then(() => {
