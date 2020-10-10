@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import * as Firebase from "firebase"; // global namespace needed, but dunno which line
 
 export const signIn = credentials => {
