@@ -1,7 +1,5 @@
-import firebase from 'firebase/app'
-import "firebase/firestore"
-import "firebase/auth"
-// firebase configuration variables
-import { conf } from "./fbKey"
+import firebase from "firebase/app";
+import conf from "./fbKey.json";
+
 firebase.initializeApp(conf);
-export default firebase
+export default firebase;

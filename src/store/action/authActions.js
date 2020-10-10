@@ -1,4 +1,4 @@
-import * as Firebase from "firebase";
+import * as Firebase from "firebase"; // global namespace need
 
 export const signIn = credentials => {
   return (dispatch, getState, { getFirebase }) => {
